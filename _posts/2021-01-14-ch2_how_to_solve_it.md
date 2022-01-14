@@ -12,7 +12,7 @@ avg=sum/i
 print(avg)
 ```
 
-:disappointed: 1차 결과 : 26.666666666666668
+:skull: 1차 결과 : 26.666666666666668
 > sum=scores.pop() 부분에서 += 처리한다는 걸 =를 넣는 실수
 
 :satisfied: 2차 결과 : 70.0
