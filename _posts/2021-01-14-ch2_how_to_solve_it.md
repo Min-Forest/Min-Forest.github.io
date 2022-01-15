@@ -24,7 +24,7 @@ print(avg)
 
 ## Q2. 자연수 13 홀,짝 판단하기
 -----
-'''python
+```python
 number = 2
 share = number/2
 rest = number%2
@@ -34,7 +34,7 @@ elif rest == 0:
     print("짝수")
 else:
     print("홀수")
-'''
+```
 
 🤩 **1차 결과** : 홀수
 
