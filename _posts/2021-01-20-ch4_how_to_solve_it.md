@@ -54,11 +54,55 @@ print("you"+"need"+"python")
 print("you","need","python") #다른 놈
 print("".join(["you","need"m"python"]))
 ```
+
 🤩 **1차 결과** :  
 youneedpython   
 youneedpython   
 you need python   
 youneedpython   
 
+## Q5. 파일에 문자열 저장 후 다시 읽어서 출력하기
 
+```python
+f1 = open("test.txt", 'w')
+f1.write("Life is too short")
+f1.close()
 
+f2 = open("test.txt",'r')
+print(f2.read())
+f2.close()
+```
+
+🤩 **1차 결과** : Life is too short
+
+## Q6. 파일에 문자열 저장 후 다시 읽어서 출력하기
+
+```python
+user_input = input("저장할 내용을 입력하세요:")
+f = open('test.txt','a')
+f.write(user_input)
+f.write('\n')
+f.close()
+```
+
+🤩 **1차 결과** :   
+Life is too short1   
+2
+
+## Q7. 파일의 특정 문자 바꿔 저장하기
+
+```python
+f = open('test.txt', 'r')
+body = f.read()
+f.close()
+
+body = body.replace('java','python')
+
+f = open('test.txt','w')
+f.write(body)
+f.close()
+```
+
+🤩 **1차 결과** :   
+Life is too short   
+you need python   
