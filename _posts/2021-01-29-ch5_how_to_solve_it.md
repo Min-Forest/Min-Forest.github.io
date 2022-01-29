@@ -192,7 +192,7 @@ for i in range(6):
 print(rotto)
 ```
   
-연습문제 정답풀이 추가
+▼연습문제 정답풀이 추가
 
 ```python
 import random
