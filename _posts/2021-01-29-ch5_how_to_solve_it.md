@@ -104,7 +104,7 @@ print(list(map(lambda x: x*3, input)))
 
 ```python
 input = [-8,2,7,5,-3,5,0,1]
-print(min(input)+max(input) #min -8 max 7
+print(min(input)+max(input)) #min -8 max 7
 
 ```
 
