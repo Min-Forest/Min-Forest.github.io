@@ -157,3 +157,23 @@ C 드라이브의 볼륨에는 이름이 없습니다.
                2개 디렉터리  415,679,242,240 바이트 남음    
 
 
+## Q11. glob 모듈을 사용하여 확장자가 .py인 파일만 출력하는 프로그램 만들기
+
+```python
+import glob
+print(glob.glob("C://doit/*.py"))
+```
+
+🤩 **1차 결과** : ['C://doit\\python.py', 'C://doit\\test.py']   
+
+## Q12. time 모듈을 사용하여 현재 날짜와 시간을 다음의 형식으로 표시
+  ex. 2018/04/03 17:20:32
+
+```python
+import time
+print(time.strftime('%Y/%m/%d %X', time.localtime(time.time())))
+```
+
+🤩 **1차 결과** : 2022\01\29 21:40:40 
+  
+  
