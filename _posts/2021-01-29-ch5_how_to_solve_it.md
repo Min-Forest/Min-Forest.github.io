@@ -191,5 +191,16 @@ for i in range(6):
             new = random.randint(1,45)  
 print(rotto)
 ```
+  
+연습문제 정답풀이 추가
 
+```python
+import random
+result = []
+while len(result) < 6 :
+    num = random.randint(1,45)
+    if num not in result:  # a not in b 구문으로 아주 간단히 확인 가능;; 
+        result.append(num)
+print(result)
+                     
 🤩 **1차 결과** : [22, 27, 23, 43, 40, 5]   
