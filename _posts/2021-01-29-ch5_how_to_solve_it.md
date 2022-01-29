@@ -182,13 +182,13 @@ print(time.strftime('%Y/%m/%d %X', time.localtime(time.time())))
 import random
 rotto = []
 for i in range(6):
-    new = random.randint(1,46)
+    new = random.randint(1,45) #Return random integer in range [a, b], including both end points.
     while 1:
         if rotto.count(new) == 0:
             rotto.append(new)
             break
         else:
-            new = random.randint(1,46)  
+            new = random.randint(1,45)  
 print(rotto)
 ```
 
