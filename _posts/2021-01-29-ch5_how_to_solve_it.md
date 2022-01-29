@@ -26,6 +26,35 @@ cal.minus(7)
 print(cal.value) # 3 출력
 ```
 
-🤩 **1차 결과** : 3
+🤩 **1차 결과** : 3   
+
+## Q2. 객체변수 value가 100 이상의 값은 가질 수 없도록 제한하는 MaxLimitCalculator 클래스 만들기
+
+```python
+class Calculator:
+    def __init__(self): 
+        self.value = 0
+         
+    def add(self, val):
+        self.value += val
+
+# 상속 및 메서드 오버라이딩 
+class MaxLimitCalculator(Calculator):
+    def add(self, val):
+        self.value += val
+        if self.value >= 100:
+            self.value = 100
+        
+
+#동작 테스트
+cal = MaxLimitCalculator()
+cal.add(50)
+cal.add(60)
+print(cal.value) 
+```
+
+🤩 **1차 결과** : 100   
+
+
 
 
