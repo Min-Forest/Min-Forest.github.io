@@ -174,6 +174,22 @@ import time
 print(time.strftime('%Y/%m/%d %X', time.localtime(time.time())))
 ```
 
-🤩 **1차 결과** : 2022\01\29 21:40:40 
+🤩 **1차 결과** : 2022\01\29 21:40:40   
   
+## Q13. random 모듈을 사용하여 로또 번호(1~45 사이 숫자 6개)를 생성해보기(단, 중복숫자 없어야함)
   
+```python
+import random
+rotto = []
+for i in range(6):
+    new = random.randint(1,46)
+    while 1:
+        if rotto.count(new) == 0:
+            rotto.append(new)
+            break
+        else:
+            new = random.randint(1,46)  
+print(rotto)
+```
+
+🤩 **1차 결과** : [22, 27, 23, 43, 40, 5]   
